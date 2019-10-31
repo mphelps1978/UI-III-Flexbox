@@ -137,6 +137,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
+	border: 1px solid grey;
 }
 
 html,
@@ -157,11 +158,7 @@ h5 {
 
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
-* {
-	border: 1px solid black;
-}
-
-.container {
+/* .container {
 	margin: 0 400px 0;
 }
 
@@ -313,4 +310,68 @@ footer {
 .email {
 	padding-top: 20px;
 	padding-bottom: 20px;
+} */
+
+/* ************************************************************************* */
+/* REFACTORING FOR FLEXBOX */
+
+.container {
+	margin: 0 400px 0;
+}
+
+/* menu styling - static across pages */
+nav {
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.menu {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+
+	text-decoration: none;
+	color: inherit;
+	width: 150px;
+}
+
+/* end menu styling */
+
+/* front page header content */
+header {
+
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 60px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+}
+
+header .hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 5em;
+	font-family: Bangers, cursive;
+	padding-top: 50px;
+}
+
+.button {
+
+	text-align: center;
+	width: 150px;
+	border: 2px solid black;
+	margin-left: 80px;
+	margin-top: 20px;
+	padding: 5px;
 }
