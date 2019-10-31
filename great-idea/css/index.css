@@ -1,21 +1,89 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -23,25 +91,44 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
@@ -49,18 +136,228 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
-    font-family: 'Titillium Web', sans-serif;
+html,
+body {
+	height: 100%;
+	font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Bangers', cursive;
-    letter-spacing: 1px;
-    margin-bottom: 15px;
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-family: 'Bangers', cursive;
+	letter-spacing: 1px;
+	margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
+/* END RESET */
+
+/* Let's set some Generic Stylings */
+h2 {
+	font-size: 1.5em;
+}
+
+type {
+	line-height: 20px;
+}
+
+
+.container {
+	margin: 0 400px 0;
+}
+
+/* menu styling - static across pages */
+nav {
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.linkStyle {
+	width: 100%;
+	margin-right: auto;
+}
+
+.menu {
+
+	display: flex;
+	justify-content: space-between;
+}
+
+.menu a {
+
+	text-decoration: none;
+	color: inherit;
+	width: 150px;
+}
+
+.companyLogo {
+	width: 35%;
+}
+
+/* end menu styling */
+
+/* front page header content */
+header {
+
+	padding-top: 40px;
+	display: flex;
+	justify-content: space-around;
+	padding-bottom: 60px;
+}
+
+.hero {
+	display: flex;
+	flex-direction: column;
+}
+
+header .hero-text {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 5em;
+	font-family: Bangers, cursive;
+	padding-top: 50px;
+}
+
+.button {
+
+	text-align: center;
+	width: 150px;
+	border: 2px solid black;
+	margin-left: 80px;
+	margin-top: 20px;
+	padding: 5px;
+}
+
+/* END MAIN PAGE HEADER */
+
+/* Top Content Section */
+
+.topHalf {
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.midImage {
+	width: 100%;
+}
+
+.bottomHalf {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.bottomText {
+	width: 95%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.email {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+/* END FOOTER STYLING */
+
+/* BEGIN SERVICES STYLING */
+
+.servicesPitch {
+	padding-bottom: 30px;
+}
+
+.servicesOverview {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	width: 100%
+}
+
+.box {
+
+	border: 2px solid black;
+	background-color: rgb(238, 237, 238);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	margin: 15px 0px 15px 0px;
+	width: 45%;
+	height: 250px;
+	padding: 0px 20px 0px 20px;
+}
+
+.smallButton {
+	margin-top: 50px;
+	padding: 5px 40px 5px 40px;
+	background-color: #F7F7F7;
+	border: 2px solid black;
+	border-radius: 5px;
+
+}
+
+/* END SERVICE STYLING */
+
+hr.footer {
+	border: 1px solid black;
+	height: 1px;
+	color: black;
+}
+
+/* Begin Closer Styling */
+
+.closer {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 100px;
+}
+
+.textInfo {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+
+
+}
+
+.bullets {
+	padding-left: 20px;
+	padding-top: 20px;
+}
+
+.textInfo li {
+	list-style: disc;
+	line-height: 40px;
+
+}
+
+.closer img {
+	width: 45%;
+}
