@@ -137,7 +137,6 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid grey;
 }
 
 html,
@@ -155,165 +154,6 @@ h5 {
 	letter-spacing: 1px;
 	margin-bottom: 15px;
 }
-
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
-/* .container {
-	margin: 0 400px 0;
-}
-
-header {
-	margin: 0 auto;
-}
-
-.nav {
-	display: inline-block;
-}
-
-.nav li {
-
-	display: inline-block;
-}
-
-.nav a {
-	display: inline-block;
-	padding: 0 40px 0;
-	text-decoration: none;
-	color: inherit;
-}
-
-.companyLogo {
-	display: inline-block;
-	position: relative;
-	padding-left: 50px;
-	top: 15px;
-	right: -50px;
-	width: 25%
-}
-
-h1 {
-	display: inline-block;
-	text-align: justify;
-	padding-top: 100px;
-	font-size: 600%
-}
-
-.heroClass {
-	display: inline-block;
-	width: 100%;
-	height: 500px;
-
-
-}
-
-.heroClass img {
-	position: absolute;
-	left: 1100px;
-	top: 100px;
-}
-
-.button {
-	position: absolute;
-	border: 2px solid black;
-	padding: 5px 40px 5px 40px;
-	top: 400px;
-	left: 650px;
-
-}
-
-.heroText {
-	display: inline-block;
-	padding-top: 100px;
-	padding-left: 175px;
-}
-
-.heroText p {
-	text-align: center;
-	font-size: 5em;
-	font-family: Bangers, cursive;
-}
-
-.topHalf {
-	display: inline-block;
-	padding-top: 40px;
-}
-
-.features {
-	display: inline-block;
-	text-align: right;
-	width: 50%;
-	float: left;
-	padding-right: 5px;
-}
-
-.about {
-	display: inline-block;
-	width: 50%;
-	float: right;
-	padding-left: 5px;
-}
-
-.midImage {
-	display: inline-block;
-	width: 100%;
-	padding-top: 50px;
-	padding-bottom: 50px;
-}
-
-.bottomHalf {
-	width: 100%;
-	text-align: center;
-	padding-bottom: 50px;
-}
-
-.services {
-	float: left;
-	width: 30%;
-	padding-right: 5px;
-}
-
-.product {
-	display: inline-block;
-	margin: 0 auto;
-	width: 30%;
-}
-
-.vision {
-	float: right;
-	width: 30%
-}
-
-p.bodyText {
-	text-align: left;
-}
-
-h2 {
-	text-align: left;
-	font-size: 1.5em;
-}
-
-footer {
-	display: inline-block;
-	text-align: left;
-	padding-top: 40px;
-}
-
-.address {
-	display: inline-block;
-	padding-top: 10px;
-}
-
-.number {
-	padding-top: 20px;
-}
-
-.email {
-	padding-top: 20px;
-	padding-bottom: 20px;
-} */
-
-/* ************************************************************************* */
-/* REFACTORING FOR FLEXBOX */
 
 .container {
 	margin: 0 400px 0;
@@ -338,6 +178,10 @@ nav {
 	text-decoration: none;
 	color: inherit;
 	width: 150px;
+}
+
+.companyLogo {
+	width: 35%;
 }
 
 /* end menu styling */
@@ -374,4 +218,52 @@ header .hero-text {
 	margin-left: 80px;
 	margin-top: 20px;
 	padding: 5px;
+}
+
+/* END MAIN PAGE HEADER */
+
+/* Top Content Section */
+
+.topHalf {
+	display: flex;
+	padding-top: 30px;
+	padding-bottom: 50px;
+}
+
+.midImage {
+	width: 100%;
+}
+
+.bottomHalf {
+	display: flex;
+	justify-content: center;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+.bottomText {
+	width: 95%;
+}
+
+footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.address {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	padding-bottom: 20px;
+}
+
+.email {
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.copyright {
+	text-align: center;
+	padding-bottom: 20px;
 }
